@@ -1,0 +1,33 @@
+
+(cl:in-package :asdf)
+
+(defsystem "roomba_500driver_meiji-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :geometry_msgs-msg
+               :std_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "Song" :depends-on ("_package_Song"))
+    (:file "_package_Song" :depends-on ("_package"))
+    (:file "Ir_Opcode" :depends-on ("_package_Ir_Opcode"))
+    (:file "_package_Ir_Opcode" :depends-on ("_package"))
+    (:file "RoombaCtrl" :depends-on ("_package_RoombaCtrl"))
+    (:file "_package_RoombaCtrl" :depends-on ("_package"))
+    (:file "Roomba500State" :depends-on ("_package_Roomba500State"))
+    (:file "_package_Roomba500State" :depends-on ("_package"))
+    (:file "LightBumper" :depends-on ("_package_LightBumper"))
+    (:file "_package_LightBumper" :depends-on ("_package"))
+    (:file "Wheeldrop" :depends-on ("_package_Wheeldrop"))
+    (:file "_package_Wheeldrop" :depends-on ("_package"))
+    (:file "LeftRight16" :depends-on ("_package_LeftRight16"))
+    (:file "_package_LeftRight16" :depends-on ("_package"))
+    (:file "LeftRight" :depends-on ("_package_LeftRight"))
+    (:file "_package_LeftRight" :depends-on ("_package"))
+    (:file "Button" :depends-on ("_package_Button"))
+    (:file "_package_Button" :depends-on ("_package"))
+    (:file "LeftRightU16" :depends-on ("_package_LeftRightU16"))
+    (:file "_package_LeftRightU16" :depends-on ("_package"))
+    (:file "Cliff" :depends-on ("_package_Cliff"))
+    (:file "_package_Cliff" :depends-on ("_package"))
+    (:file "MotorOvercurrent" :depends-on ("_package_MotorOvercurrent"))
+    (:file "_package_MotorOvercurrent" :depends-on ("_package"))
+  ))

@@ -1,0 +1,17 @@
+<package>
+  <description brief="roomba_teleop_meiji">
+
+     roomba_teleop_meiji
+
+  </description>
+  <author>amsl</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/roomba_teleop_meiji</url>
+
+  <depend package="joy"/>
+  <depend package="roomba_500driver_meiji"/>
+
+</package>
+
+
